@@ -1,2 +1,1 @@
-# algorithms
-To not to lose.
+Just useful algorithms I must remember.
