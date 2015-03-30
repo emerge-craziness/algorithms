@@ -10,9 +10,9 @@ void quicksort( int a[], int N );
 
 int main( int argc, char* argv[] )
 {
-    int a[] = { 1, 234, 55, 23, 7357, 345, 865 };
-    quicksort( a, sizeof( a ) / sizeof( a[0] ) );
-    for ( int i = 0; i < 7; i++)
+    int a[] = { 28, 42, 11, 19, 12, 19, 28, 1, 6, 17, 34, 48, 22, 41, 24, 27, 11, 41, 14, 40, 6, 46, 38, 47, 25, 41 };
+    quicksort( a, sizeof( a ) / sizeof( a[0] ) - 1 );
+    for ( int i = 0; i < sizeof( a ) / sizeof( a[0] ); i++)
     {
         cout << a[i] << " ";
     }
@@ -22,8 +22,8 @@ int main( int argc, char* argv[] )
 
 void quicksort( int a[], int N )
 {
-    int l = 0, r = N - 1; //left border, right border
-    int temp, p;          //temp is for swap; p is the middle element  
+    int l = 0, r = N; 
+    int temp, p; 
     p = a[ N / 2 ];
 
     do
